@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  web:
+    build: .
+    container_name: main
+    command: python main.py
+    ports:
+      - 80:80
+    volumes:
+      - ./:/app
